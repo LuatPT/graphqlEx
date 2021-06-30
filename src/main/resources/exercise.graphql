@@ -1,0 +1,16 @@
+schema{
+	query: Query
+}
+
+type Query{
+	allExercise: [Exercise]
+	exercise(id: String): Exercise
+}
+
+type Exercise{
+	isn: String
+	name: String
+	rep: String
+	set: String
+	group: [String]
+}
